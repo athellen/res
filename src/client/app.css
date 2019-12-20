@@ -1,0 +1,16 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+body {
+  background-image: url("https://media.istockphoto.com/photos/group-of-young-children-learning-about-first-aid-picture-id872749478");
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card_item {
+  color: #000000;
+  background-color: #ffffff;
+  height: 100px;
+  width: 150px;
+  padding-right: 15px;
+}
