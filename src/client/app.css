@@ -1,6 +1,6 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
 body {
-  background-image: url("https://media.istockphoto.com/photos/group-of-young-children-learning-about-first-aid-picture-id872749478");
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/13/17/37/climate-change-2063240_960_720.jpg");
 }
 
 .cards {
@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
 }
 .card_item {
-  color: #000000;
+  color: #070707;
   background-color: #ffffff;
   height: 100px;
   width: 150px;

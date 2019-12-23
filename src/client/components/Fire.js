@@ -1,15 +1,9 @@
 import React from "react";
-import Display from "./Display";
-class Fire extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "hello"
-    };
-  }
-  render() {
-    return <Display text={this.state.text} />;
-  }
-}
 
+const Fire = props => {
+  <>
+    <p>Red Cross Department</p>
+    <p>{props.location.state}</p>
+  </>;
+};
 export default Fire;
