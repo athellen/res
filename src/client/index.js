@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./components/Login";
-import Fire from "./components/Fire";
-import Meteorological from "./components/Meteorological";
-import Security from "./components/Security";
-import Medical from "./components/Medicine";
-import RedCross from "./components/Redcross";
+import Fire from "./components/department/Fire";
+import Meteorological from "./components/department/Meteorological";
+import Security from "./components/department/Security";
+import Medical from "./components/department/Medicine";
+import RedCross from "./components/department/Redcross";
+import About from "./components/About";
+import Profile from "./components/Profile";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +21,8 @@ ReactDOM.render(
       <Route path="/security" component={Security} />
       <Route path="/redcross" component={RedCross} />
       <Route path="/medical" component={Medical} />
+      <Route path="/About" component={About} />
+      <Route path="/profile" component={Profile} />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

@@ -1,17 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-darker">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand">
           <img src="#" alt="" />
         </a>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <NavLink to="/" className="nav-link">
               Home
-            </a>
+            </NavLink>
           </li>
 
           <li className="nav-item">

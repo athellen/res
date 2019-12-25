@@ -26,11 +26,11 @@ class Home extends React.Component {
       <div className="cards_collection">
         {this.state.dpt.map(({ name, page, text }) => (
           <div
-            onClick={() => this.props.history.push(`${page}`, text)}
+            //onClick={() => this.props.history.push(`${page}`, text)}
             key={name}
             className="card"
           >
-            <Card item={name} />
+            {/* <Card item={name} /> */}
           </div>
         ))}
       </div>
