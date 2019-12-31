@@ -21,6 +21,13 @@ class Profile extends React.Component {
     });
   }
 
+  handleButton(event) {
+    event.preventDefault();
+    alert(
+      `FirstName: ${this.state.firstName} LastName: ${this.state.lastName} Ward: ${this.state.ward} PhoneNumber: ${this.state.phoneNumber} `
+    );
+  }
+
   render() {
     console.log(this.props);
     return (
@@ -76,6 +83,12 @@ class Profile extends React.Component {
             onChange={this.handleChange}
           />
         </form>
+        <div>
+          <button className="btn loginbtn" onClick={this.handleButton}>
+            {" "}
+            Submit{" "}
+          </button>
+        </div>
       </div>
     );
   }
