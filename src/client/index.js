@@ -17,7 +17,7 @@ ReactDOM.render(
       <Route path="/" component={App} exact />
       <Route path="/login" component={Login} />
       <Route path="/fire" component={Fire} />
-      <Route path="/meteorological" component={Meteorological} />
+      <Route path="/meteorogical" component={Meteorological} />
       <Route path="/security" component={Security} />
       <Route path="/redcross" component={RedCross} />
       <Route path="/medical" component={Medical} />

@@ -28,37 +28,37 @@ class Login extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div className="col" align="center">
-        <div className="card loginCard">
-          <h2>LOGIN</h2>
-          <form>
-            <div className="inputWithIcon">
-              <input
-                className="form-control loginform"
-                type="email"
-                name="email"
-                placeholder="Enter email"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-              />
-            </div>
-
-            <br />
-            <input
-              className="form-control loginform"
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={this.state.password}
-              onChange={this.handleChange}
-              required
-            />
-          </form>
-          <div>
-            <button className="btn loginbtn" onClick={this.handleButton}>
-              Login
-            </button>
+      //
+      <div className="loginCard" style={{ width: "100vw", height: "100vh" }}>
+        <div
+          className="card"
+          style={{ width: "22rem", height: "22rem", opacity: "0.6" }}
+        >
+          <div className="card-body">
+            <h5 className="card-title">Login</h5>
+            <hr />
+            <form>
+              <div className="form-group">
+                <label>Email address</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div className="form-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <button type="submit" className="btn btn-primary">
+                Login
+              </button>
+            </form>
           </div>
         </div>
       </div>

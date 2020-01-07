@@ -4,8 +4,7 @@ body {
   top: 0;
 }
 .home {
-  background: url("https://images.pexels.com/photos/1549308/pexels-photo-1549308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-    no-repeat;
+  background: url("/src/images/land.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -30,13 +29,22 @@ body {
   width: 200px;
   padding-right: 15px;
 }
-.loginCard {
+/* .loginCard {
   width: 25%;
   margin-top: 10%;
   height: 60vh;
-}
-.loginCard h2 {
+} */
+
+/* .loginCard h2 {
   padding: 30px;
+} */
+.loginCard {
+  background: white;
+  display: flex;
+  padding-top: 70px;
+  justify-content: center;
+  background: url("/src/images/dis.jpg");
+  background-repeat: no-repeat;
 }
 .loginform {
   width: 70%;
@@ -49,10 +57,10 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
-  .loginCard {
+  /* .loginCard {
     max-width: 100% !important;
     background: blue;
-  }
+  } */
   .body {
     background-color: blue;
   }
@@ -81,3 +89,19 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.footer {
+  background: #161a2f;
+  color: #ffffff;
+  margin-top: 385px;
+}
+.card {
+  border: none !important;
+}
+/* .col {
+  background: url("/src/images/bear.jpg");
+} */
+
+/* #root {
+  background: blue;
+} */
