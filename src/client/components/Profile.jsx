@@ -13,6 +13,7 @@ class Profile extends React.Component {
       area: ""
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleButton = this.handleButton.bind(this);
   }
   handleChange(event) {
     event.preventDefault();

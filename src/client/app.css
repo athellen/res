@@ -27,7 +27,7 @@ body {
   color: #070707;
   background-color: #ffffff;
   height: 100px;
-  width: 150px;
+  width: 200px;
   padding-right: 15px;
 }
 .loginCard {
@@ -75,4 +75,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

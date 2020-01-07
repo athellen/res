@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container-fluid">
@@ -16,19 +17,23 @@ function Navbar() {
           </li>
 
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <NavLink to="/Profile" className="nav-link">
               Profile
-            </a>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <NavLink to="/About" className="nav-link">
               About
-            </a>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a
+              href="#"
+              className="nav-link"
+              onClick={() => props.history.push("/login")}
+            >
               Logout
             </a>
           </li>
@@ -37,4 +42,4 @@ function Navbar() {
     </nav>
   );
 }
-export default Navbar;
+export default withRouter(Navbar);
