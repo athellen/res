@@ -18,26 +18,21 @@ body {
   cursor: pointer;
   transition: 0.25s;
 }
-.homecard:hover {
-  border: solid 2px;
-  border-color: black;
-}
 .card_item {
   color: #070707;
   background-color: #ffffff;
   height: 100px;
   width: 200px;
   padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* .loginCard {
-  width: 25%;
-  margin-top: 10%;
-  height: 60vh;
-} */
 
-/* .loginCard h2 {
-  padding: 30px;
-} */
+.card_item:hover {
+  border: solid 2px;
+  border-color: black;
+}
 .loginCard {
   background: white;
   display: flex;
@@ -56,13 +51,17 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 750px) {
-  /* .loginCard {
+@media only screen and (max-width: 768px) {
+  .loginCard {
     max-width: 100% !important;
     background: blue;
-  } */
+  }
   .body {
     background-color: blue;
+  }
+
+  .card {
+    height: 43rem !important;
   }
 }
 
@@ -95,13 +94,3 @@ body {
   color: #ffffff;
   margin-top: 385px;
 }
-.card {
-  border: none !important;
-}
-/* .col {
-  background: url("/src/images/bear.jpg");
-} */
-
-/* #root {
-  background: blue;
-} */

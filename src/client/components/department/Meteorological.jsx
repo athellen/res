@@ -1,4 +1,5 @@
 import React from "react";
+import floods from "../../../images/floods.jpg";
 
 import "./department.css";
 
@@ -7,7 +8,7 @@ const Meteorological = () => {
     <div
       className="department-container"
       style={{
-        background: "url(./../../src/images/floods.jpg)",
+        background: `url(${floods})`,
         backgroundSize: "cover",
         color: ""
       }}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import fire from "../../../images/fire.jpg";
 import "./department.css";
 
 class Department extends Component {
@@ -8,7 +8,7 @@ class Department extends Component {
       <div
         className="department-container"
         style={{
-          background: "url(../../../src/images/fire.jpg)",
+          background: `url(${fire})`,
           backgroundSize: "cover",
           color: "white"
         }}
