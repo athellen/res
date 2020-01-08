@@ -4,7 +4,7 @@ body {
   top: 0;
 }
 .home {
-  background: url("/src/images/land.jpg") no-repeat;
+  background: url("../images/land.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -43,7 +43,7 @@ body {
   display: flex;
   padding-top: 70px;
   justify-content: center;
-  background: url("/src/images/dis.jpg");
+  background: url("../images/dis.jpg");
   background-repeat: no-repeat;
 }
 .loginform {

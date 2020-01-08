@@ -7,7 +7,7 @@ const Meteorological = () => {
     <div
       className="department-container"
       style={{
-        background: "url(/src/images/floods.jpg)",
+        background: "url(./../../src/images/floods.jpg)",
         backgroundSize: "cover",
         color: ""
       }}

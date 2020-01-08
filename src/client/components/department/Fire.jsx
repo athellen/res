@@ -8,7 +8,7 @@ class Department extends Component {
       <div
         className="department-container"
         style={{
-          background: "url(/src/images/fire.jpg)",
+          background: "url(../../../src/images/fire.jpg)",
           backgroundSize: "cover",
           color: "white"
         }}

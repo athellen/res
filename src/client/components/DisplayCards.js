@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { PromiseProvider } from "mongoose";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 
 const CardItems = [
   { name: "Fire", page: "/fire" },
@@ -16,13 +16,15 @@ const DisplayCards = props => {
   return (
     <div className="cards">
       {CardItems.map(({ name, page }) => (
-        <div
-          onClick={e => props.history.push(`${page}`)}
-          className="card_item"
-          key={name}
-        >
-          <Card item={name} />
-        </div>
+        <Link to={page}>
+          <div
+            // onClick={e => props.history.push(`${page}`)}
+            className="card_item"
+            key={name}
+          >
+            <Card item={name} />
+          </div>
+        </Link>
       ))}
     </div>
   );
